@@ -71,7 +71,6 @@ function printQuote(){
   quoteString += '</p>'
   document.getElementById('quote-box').innerHTML = quoteString;
   backgroundColor();
-  autoRefresh();
 }
 
 /***
@@ -86,10 +85,7 @@ function backgroundColor(){
 /***
  * Auto-refreshes quotes at regular 10 second intervals
  ***/
-function autoRefresh(){
-  let interval = setInterval(printQuote, 10000);
-  return interval;
-}
+const interval = setInterval(printQuote, 5000);
 
 /***
  * click event listener for the print quote button
