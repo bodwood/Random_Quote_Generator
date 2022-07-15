@@ -85,7 +85,7 @@ function backgroundColor(){
 /***
  * Auto-refreshes quotes at regular 10 second intervals
  ***/
-const interval = setInterval(printQuote, 1000);
+const interval = setInterval(printQuote, 10000);
 
 /***
  * click event listener for the print quote button
